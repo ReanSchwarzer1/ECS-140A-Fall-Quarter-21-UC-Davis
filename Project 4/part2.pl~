@@ -1,0 +1,39 @@
+use_module(library(lists)).
+
+queens(N,Q):-
+    nqueens(N,Soln),
+    same(Soln,Q).
+
+
+same([], []).
+same([H1|R1], [H2|R2]):-
+    H1 = H2,
+    same(R1, R2).  
+
+
+nqueens(N, Soln) :-
+	length(Soln, N),
+	queen(Soln, N). 
+
+ktoN(N,N,[N]) :-!.
+ktoN(K,N,[K|Tail]) :- 
+    K < N, K1 is K+1, ktoN(K1, N, Tail).
+
+
+queen([],_).
+
+queen([Q|Listq],N) :-
+	queen(Listq, N), 
+    ktoN(1,N,Pos),
+    member(Q, Pos),
+    soln_check(Q,Listq, 1).
+
+
+
+soln_check(_,[], _).
+soln_check(Q,[Q1|Listq],Xdist) :-
+	Q =\= Q1, 
+	Test is abs(Q1-Q),
+	Test =\= Xdist, 
+	Xdist1 is Xdist + 1,
+	soln_check(Q,Listq,Xdist1).

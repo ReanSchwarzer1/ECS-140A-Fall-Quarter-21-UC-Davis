@@ -1,0 +1,5 @@
+https://riptutorial.com/Download/common-lisp.pdf
+http://index-of.co.uk/Artificial-Intelligence/The%20Elements%20of%20Artificial%20Intelligence%20Using%20Lisp%20-%20Steven%20L.%20Tanimoto.pdf
+https://www.cs.cmu.edu/Groups/AI/html/cltl/clm/node75.html
+https://www.youtube.com/watch?v=Bp_QV6ltVZU
+https://youtu.be/SepxCxkMJVc
