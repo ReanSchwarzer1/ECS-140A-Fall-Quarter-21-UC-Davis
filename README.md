@@ -1,1 +1,1 @@
-# ECS-140A-Fall-Quarter-21-UC-Davis
+# ECS140A Fall Quarter'21 UCDavis
